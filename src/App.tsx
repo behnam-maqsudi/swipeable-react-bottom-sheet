@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import "./App.css";
-import BottomSheet from "./sheet";
+import BottomSheet from "./swipeable-react-bottom-sheet";
 
 function randomInteger(max) {
   return Math.floor(Math.random() * (max + 1));
