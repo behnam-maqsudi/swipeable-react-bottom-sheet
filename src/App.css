@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  background-color: #282c34;
+
+  
+}
+
+.app {
+  max-width: 600px;
+  user-select: none;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  left: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 0px 0px 1px #7a7e84;
+}
+
+.react-bottom-sheet {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 768px;
+  overflow: hidden;
+}
+
+.toggle-btn {
+  width: 100px;
+  margin: auto;
+  height: 52px;
+  border-radius: 36px;
+  border: unset;
+  background: #01ef92;
+  font-size: 15px;
+  color: #282c34;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.backdrop {
+  background-color: rgb(67 67 67 / 88%);
+  overflow: hidden;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+}
+
+.sheet {
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 96vw;
+  border-radius: 12px 12px 0px 0px;
+  background: #01ef92;
+  touch-action: none;
+  overflow: auto;
+  bottom: 0;
+  flex-direction: column;
+}
+
+.header {
+  display: block;
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10%;
+}
+
+.header::before{
+  content: "";
+  width: 30px;
+  height: 5px;
+  background-color: blueviolet;
+  display: block;
+  border-radius: 10px;
+}
+
+.root {
+  height: 90%;
+}
