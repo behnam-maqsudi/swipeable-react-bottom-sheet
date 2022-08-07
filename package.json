@@ -1,5 +1,5 @@
 {
-  "name": "action-sheet",
+  "name": "swipeable-react-bottom-sheet",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -45,5 +45,16 @@
   },
   "devDependencies": {
     "@types/styled-components": "^5.1.25"
-  }
+  },
+  "description": "swipeable-react-bottom-sheet",
+  "main": "bottomSheet.tsx",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benamm/swipeable-react-bottom-sheet.git"
+  },
+  "keywords": [
+    "swipeable-react-bottom-sheet"
+  ],
+  "author": "behnam maghsoodi",
+  "license": "ISC"
 }
