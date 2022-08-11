@@ -1,60 +1,33 @@
 {
-  "name": "swipeable-react-bottom-sheet",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@react-spring/web": "^9.5.2",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^13.0.0",
-    "@testing-library/user-event": "^13.2.1",
-    "@types/jest": "^27.0.1",
-    "@types/node": "^16.7.13",
-    "@types/react": "^18.0.0",
-    "@types/react-dom": "^18.0.0",
-    "@use-gesture/react": "^10.2.17",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "styled-components": "^5.3.5",
-    "typescript": "^4.4.2",
-    "web-vitals": "^2.1.0"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
+    "name": "n-c-component-library",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/joeythelantern/Component-Library.git"
+    },
+    "version": "0.0.2",
+    "description": "A component library for getting people started with easy to re-use components for everyday projects.",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "files": [
+        "dist"
     ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "@types/styled-components": "^5.1.25"
-  },
-  "description": "swipeable-react-bottom-sheet",
-  "main": "src/swipeable-react-bottom-sheet.tsx",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/benamm/swipeable-react-bottom-sheet.git"
-  },
-  "keywords": [
-    "swipeable-react-bottom-sheet"
-  ],
-  "author": "behnam maghsoodi",
-  "license": "ISC"
+    "scripts": {
+        "build": "rm -rf dist/ && prettier --write src/ && npm run build:esm && npm run build:cjs",
+        "build:esm": "tsc",
+        "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
+    },
+    "author": "The Nerdy Canuck",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^17.0.21",
+        "@types/react": "^17.0.37",
+        "@types/react-dom": "^17.0.11",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "typescript": "^4.5.2"
+    },
+    "peerDependencies": {
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
+    }
 }
